@@ -76,7 +76,7 @@ finaldf.info()
 X = finaldf.drop(['Churn'],axis=1)
 y = finaldf['Churn']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.36, random_state=42)
 
 #oversampling training set
 from imblearn.over_sampling import SMOTE
